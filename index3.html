@@ -1,0 +1,2904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PV Designs | G. Padma's Design Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+/* Base Styles */
+:root {
+    --primary-color: #D4AF37; /* Gold */
+    --primary-dark: #B38B2D;
+    --primary-light: #FFDF00;
+    --secondary-color: #8b5cf6;
+    --text-color: #333;
+    --light-text: #777;
+    --bg-color: #f9f9f9;
+    --white: #ffffff;
+    --gray-light: #f0f0f0;
+    --gray-medium: #e0e0e0;
+    --gray-dark: #888;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 16px;
+    --border-radius-xl: 24px;
+    --border-radius-full: 9999px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: var(--border-radius-md);
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--light-text);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* Header Styles */
+.header {
+    background-color: var(--white);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 15px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.logo-img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.mobile-menu-btn {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('https://readdy.ai/api/search-image?query=beautiful%2520elegant%2520embroidery%2520designs%2520on%2520fabric%2520with%2520colorful%2520threads%2520and%2520patterns%252C%2520artistic%2520composition%2520with%2520soft%2520lighting%252C%2520showing%2520intricate%2520details%2520of%2520traditional%2520Maggam%2520work%252C%2520professional%2520photography%2520with%2520soft%2520gradient%2520background&width=1920&height=1080&seq=1&orientation=landscape');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 80vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    color: var(--white);
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* About Section */
+.about-section {
+    background-color: var(--white);
+}
+
+.about-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    margin-bottom: 20px;
+    color: var(--light-text);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    margin-bottom: 15px;
+}
+
+.feature-icon {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+/* Design Categories */
+.categories-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.category-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.category-image {
+    height: 300px;
+    overflow: hidden;
+}
+
+.category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.category-card:hover .category-image img {
+    transform: scale(1.05);
+}
+
+.category-content {
+    padding: 25px;
+}
+
+.category-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.category-description {
+    color: var(--light-text);
+    margin-bottom: 20px;
+}
+
+.price-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.price-icon {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+/* Design Gallery */
+.gallery-section {
+    background-color: var(--white);
+}
+
+.filter-tabs {
+    display: inline-flex;
+    background-color: var(--gray-light);
+    border-radius: var(--border-radius-full);
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    border-radius: var(--border-radius-full);
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    background: none;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.design-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.design-card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.design-image {
+    height: 300px;
+    overflow: hidden;
+}
+
+.design-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.design-content {
+    padding: 20px;
+}
+
+.design-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.design-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.design-price {
+    background-color: rgba(212, 175, 55, 0.1);
+    color: var(--primary-color);
+    padding: 5px 12px;
+    border-radius: var(--border-radius-full);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.design-description {
+    color: var(--light-text);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.whatsapp-link:hover {
+    color: var(--primary-dark);
+}
+
+.whatsapp-icon {
+    margin-right: 5px;
+}
+
+.load-more-btn {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Testimonials */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    padding: 25px;
+    box-shadow: var(--shadow-sm);
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.testimonial-avatar {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(212, 175, 55, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.testimonial-author {
+    font-weight: 600;
+}
+
+.testimonial-location {
+    font-size: 0.8rem;
+    color: var(--light-text);
+}
+
+.testimonial-rating {
+    color: #FFD700;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.testimonial-text {
+    color: var(--light-text);
+    font-style: italic;
+}
+
+/* Contact Section */
+.contact-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 40px;
+}
+
+.contact-title {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    padding: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--gray-medium);
+    border-radius: var(--border-radius-md);
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: var(--white);
+    padding: 60px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.footer-logo span {
+    font-family: 'Pacifico', cursive;
+    color: var(--primary-color);
+}
+
+.footer-about {
+    color: var(--gray-dark);
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: var(--primary-color);
+}
+
+.footer-title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-link {
+    margin-bottom: 10px;
+    color: var(--gray-dark);
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    color: var(--gray-dark);
+    font-size: 0.9rem;
+}
+
+.admin-link {
+    color: var(--gray-dark);
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.admin-link:hover {
+    color: var(--primary-color);
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    background-color: #25D366;
+    color: var(--white);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-lg);
+    width: 100%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--light-text);
+    transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+    color: var(--text-color);
+}
+
+.modal-header {
+    padding: 20px;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+/* Admin Panel Styles */
+.admin-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    z-index: 1001;
+    display: none;
+    overflow-y: auto;
+}
+
+.admin-sidebar {
+    width: 250px;
+    background-color: var(--white);
+    height: 100vh;
+    position: fixed;
+    box-shadow: var(--shadow-sm);
+}
+
+.admin-logo {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.admin-logo span {
+    font-family: 'Pacifico', cursive;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+.admin-nav {
+    padding: 20px 0;
+}
+
+.admin-nav-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: var(--light-text);
+    transition: all 0.3s ease;
+}
+
+.admin-nav-item:hover {
+    background-color: rgba(212, 175, 55, 0.1);
+    color: var(--primary-color);
+}
+
+.admin-nav-item.active {
+    background-color: rgba(212, 175, 55, 0.1);
+    color: var(--primary-color);
+    border-left: 3px solid var(--primary-color);
+}
+
+.admin-nav-icon {
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+.admin-main {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 20px;
+}
+
+.admin-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.admin-user {
+    display: flex;
+    align-items: center;
+}
+
+.admin-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(212, 175, 55, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.admin-notification {
+    position: relative;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    color: var(--light-text);
+    cursor: pointer;
+}
+
+.admin-notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 18px;
+    height: 18px;
+    background-color: #FF5252;
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.stat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 1.3rem;
+}
+
+.stat-icon.primary {
+    background-color: rgba(212, 175, 55, 0.1);
+    color: var(--primary-color);
+}
+
+.stat-icon.green {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+}
+
+.stat-icon.blue {
+    background-color: rgba(33, 150, 243, 0.1);
+    color: #2196F3;
+}
+
+.stat-icon.yellow {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: #FFC107;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    color: var(--light-text);
+    font-size: 0.9rem;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.admin-table th {
+    font-weight: 600;
+    color: var(--light-text);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.admin-table tr:hover {
+    background-color: var(--gray-light);
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: var(--border-radius-full);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.status-badge.published {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.action-btn.edit {
+    color: var(--primary-color);
+}
+
+.action-btn.delete {
+    color: #FF5252;
+}
+
+.action-btn:hover {
+    opacity: 0.8;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination-info {
+    color: var(--light-text);
+    font-size: 0.9rem;
+}
+
+.pagination-controls {
+    display: flex;
+    gap: 5px;
+}
+
+.page-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: var(--border-radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border: 1px solid var(--gray-medium);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.page-btn.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+.page-btn:hover:not(.active) {
+    background-color: var(--gray-light);
+}
+
+/* Upload Form */
+.upload-container {
+    border: 2px dashed var(--gray-medium);
+    border-radius: var(--border-radius-md);
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.upload-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.upload-text {
+    margin-bottom: 10px;
+}
+
+.upload-info {
+    color: var(--light-text);
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+    background-color: var(--primary-dark);
+}
+
+.image-preview {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.preview-image {
+    max-height: 200px;
+    max-width: 100%;
+    border-radius: var(--border-radius-md);
+    margin-bottom: 10px;
+}
+
+.file-info {
+    color: var(--light-text);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.remove-image {
+    color: #FF5252;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.remove-image i {
+    margin-right: 5px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .about-container {
+        flex-direction: column;
+    }
+    
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-title {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .admin-sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+    
+    .admin-main {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .contact-card {
+        flex-direction: column;
+    }
+    
+    .contact-info,
+    .contact-form {
+        min-width: 100%;
+    }
+    
+    .modal-content {
+        max-width: 95%;
+    }
+}
+
+/* Custom Checkbox */
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.custom-checkbox input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: var(--white);
+    border: 2px solid var(--gray-medium);
+    border-radius: var(--border-radius-sm);
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.custom-checkbox .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid var(--white);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Custom Switch */
+.custom-switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+}
+
+.custom-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--gray-medium);
+    transition: .4s;
+    border-radius: 24px;
+}
+
+.switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: var(--white);
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.custom-switch input:checked + .switch-slider {
+    background-color: var(--primary-color);
+}
+
+.custom-switch input:checked + .switch-slider:before {
+    transform: translateX(24px);
+}
+
+/* Notification */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: var(--border-radius-md);
+    display: flex;
+    align-items: center;
+    box-shadow: var(--shadow-lg);
+    z-index: 1100;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+}
+
+.notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.notification.success {
+    background-color: #4CAF50;
+    color: var(--white);
+}
+
+.notification.error {
+    background-color: #FF5252;
+    color: var(--white);
+}
+
+.notification-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+</style>
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+    <div class="container header-container">
+        <a href="#" class="logo">
+            <img src="C:\Users\Dell\OneDrive\Desktop\app designing\logo\pv-logo.svg" alt="PV Logo" class="logo-img">
+            <span>Designs</span>
+        </a>
+        <nav class="nav">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#maggam" class="nav-link">Maggam Designs</a>
+            <a href="#computer" class="nav-link">Computer Designs</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="mobile-menu-btn">
+            <i class="ri-menu-line"></i>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Exquisite Designs by G. Padma</h1>
+            <p class="hero-subtitle">Bringing 10 years of expertise in Maggam work and Computer designs to create beautiful, personalized designs for all occasions.</p>
+            <div class="hero-buttons">
+                <a href="#maggam" class="btn btn-primary">Explore Maggam Work</a>
+                <a href="#computer" class="btn btn-outline">View Computer Designs</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section about-section">
+    <div class="container">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="C:\Users\Dell\OneDrive\Desktop\app designing\images\about.png" alt="G. Padma">
+            </div>
+            <div class="about-content">
+                <h2 class="about-title">About G. Padma</h2>
+                <p class="about-text">With over a decade of experience in the art of design, G. Padma has established herself as a skilled artisan specializing in both traditional Maggam embroidery work and modern computer-aided designs.</p>
+                <p class="about-text">Her journey began with a passion for traditional Indian embroidery techniques, which she has perfected over the years. As technology evolved, so did her skills, expanding into digital design while maintaining the authentic essence of traditional craftsmanship.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h3 class="about-title" style="font-size: 1.3rem;">Expertise</h3>
+                        <ul>
+                            <li class="feature-item">
+                                <i class="ri-check-line feature-icon"></i>
+                                <span>Traditional Maggam Work</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="ri-check-line feature-icon"></i>
+                                <span>Computer Designs</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="ri-check-line feature-icon"></i>
+                                <span>Custom Bridal Wear</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="feature-item">
+                        <h3 class="about-title" style="font-size: 1.3rem;">Experience</h3>
+                        <ul>
+                            <li class="feature-item">
+                                <i class="ri-time-line feature-icon"></i>
+                                <span>10+ Years in Design</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="ri-customer-service-2-line feature-icon"></i>
+                                <span>500+ Happy Clients</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="ri-award-line feature-icon"></i>
+                                <span>Quality Craftsmanship</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-primary">
+                    <i class="ri-whatsapp-line" style="margin-right: 8px;"></i>
+                    Contact for Custom Designs
+                </a>
+            </div>
+        </div>
+    </div>
+</section><!-- Category Section --><section class="section"> 
+    <div class="container"> <h2 class="section-title">Explore Our Design Categories</h2>
+         <p class="section-subtitle">Discover our extensive collection of designs categorized by style and price range to find the perfect match for your needs.</p>
+         <div class="categories-grid">
+            <!-- Maggam Designs Card -->
+            <div id="maggam" class="category-card">
+                <div class="category-image">
+                    <img src="https://readdy.ai/api/search-image?query=close-up%2520of%2520beautiful%2520traditional%2520Indian%2520Maggam%2520embroidery%2520work%2520on%2520fabric%252C%2520showing%2520intricate%2520gold%2520thread%2520details%252C%2520colorful%2520patterns%252C%2520and%2520beadwork%2520on%2520saree%2520or%2520blouse%252C%2520professional%2520studio%2520lighting%2520with%2520soft%2520focus%2520on%2520details&width=800&height=500&seq=3&orientation=landscape" alt="Maggam Designs">
+                </div>
+                <div class="category-content">
+                    <h3 class="category-title">Maggam Designs</h3>
+                    <p class="category-description">Traditional hand-embroidery designs perfect for blouses, sarees, and other traditional wear. Each piece is meticulously crafted with attention to detail.</p>
+                    <div class="price-item">
+                        <i class="ri-price-tag-3-line price-icon"></i>
+                        <span class="font-medium">Budget: ₹700 - ₹1800</span>
+                    </div>
+                    <div class="price-item">
+                        <i class="ri-price-tag-3-line price-icon"></i>
+                        <span class="font-medium">Premium: ₹1900 - ₹3000</span>
+                    </div>
+                    <div class="price-item">
+                        <i class="ri-price-tag-3-line price-icon"></i>
+                        <span class="font-medium">Luxury: ₹3000+</span>
+                    </div>
+                    <a href="#maggam-designs" class="btn btn-primary" style="margin-top: 15px;">View Maggam Designs</a>
+                </div>
+            </div>
+            
+            <!-- Computer Designs Card -->
+            <div id="computer" class="category-card">
+                <div class="category-image">
+                    <img src="C:\Users\Dell\OneDrive\Desktop\app designing\images\computerwork.jpg" alt="Computer Designs">
+                </div>
+                <div class="category-content">
+                    <h3 class="category-title">Computer Designs</h3>
+                    <p class="category-description">Digitally created designs that offer precision and consistency. Perfect for modern outfits, bulk orders, and customized patterns with intricate details.</p>
+                    <div class="price-item">
+                        <i class="ri-price-tag-3-line price-icon"></i>
+                        <span class="font-medium">Budget: ₹400 - ₹1000</span>
+                    </div>
+                    <div class="price-item">
+                        <i class="ri-price-tag-3-line price-icon"></i>
+                        <span class="font-medium">Premium: ₹1000 - ₹1800</span>
+                    </div>
+                    <div class="price-item">
+                        <i class="ri-price-tag-3-line price-icon"></i>
+                        <span class="font-medium">Luxury: ₹2000+</span>
+                    </div>
+                    <a href="#computer-designs" class="btn btn-primary" style="margin-top: 15px;">View Computer Designs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- Maggam Designs Gallery -->
+<section id="maggam-designs" class="section gallery-section"> 
+    <div class="container"> <h2 class="section-title">Maggam Design Collection</h2> 
+    <p class="section-subtitle">Browse through our exquisite collection of hand-crafted Maggam designs, categorized by price range.</p>
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">All Designs</button>
+            <button class="filter-btn" data-filter="budget">Budget</button>
+            <button class="filter-btn" data-filter="premium">Premium</button>
+            <button class="filter-btn" data-filter="luxury">Luxury</button>
+        </div>
+        
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="maggam-designs-container">
+            <!-- Designs will be loaded here dynamically -->
+        </div>
+        
+        <div class="load-more-btn">
+            <button id="load-more-maggam" class="btn btn-outline">Load More Designs</button>
+        </div>
+    </div>
+</section><!-- Computer Designs Gallery -->
+<section id="computer-designs" class="section">
+     <div class="container"> <h2 class="section-title">Computer Design Collection</h2> 
+        <p class="section-subtitle">Explore our precision-crafted computer designs, offering consistency and intricate details for modern needs.</p>
+            <!-- Filter Tabs -->
+    <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All Designs</button>
+        <button class="filter-btn" data-filter="budget">Budget</button>
+        <button class="filter-btn" data-filter="premium">Premium</button>
+        <button class="filter-btn" data-filter="luxury">Luxury</button>
+    </div>
+    
+    <!-- Gallery Grid -->
+    <div class="gallery-grid" id="computer-designs-container">
+        <!-- Designs will be loaded here dynamically -->
+    </div>
+    
+    <div class="load-more-btn">
+        <button id="load-more-computer" class="btn btn-outline">Load More Designs</button>
+    </div>
+</div>
+</section><!-- Contact Section -->
+<section id="contact" class="section"> 
+    <div class="container"> <h2 class="section-title">Get In Touch</h2> 
+        <p class="section-subtitle">Have questions or want to place an order? Contact G. Padma directly through WhatsApp for quick responses.</p>
+        <div class="contact-card">
+            <div class="contact-info">
+                <h3 class="contact-title">Contact Information</h3>
+                
+                <div class="contact-item">
+                    <i class="ri-whatsapp-line contact-icon"></i>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p>+91 8309595989</p>
+                        <p style="font-size: 0.9rem; opacity: 0.9;">Preferred contact method for quick responses</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="ri-time-line contact-icon"></i>
+                    <div>
+                        <h4>Business Hours</h4>
+                        <p>Monday - Saturday: 10:00 AM - 7:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="ri-information-line contact-icon"></i>
+                    <div>
+                        <h4>Order Information</h4>
+                        <p>Please include design details, fabric type, and delivery timeline when inquiring.</p>
+                    </div>
+                </div>
+                
+                <a href="https://wa.me/918309595989?text=Hello%20G.%20Padma,%20I'm%20interested%20in%20your%20designs%20and%20would%20like%20to%20know%20more." class="btn btn-outline" style="background-color: var(--white); margin-top: 20px;">
+                    <i class="ri-whatsapp-line" style="margin-right: 8px;"></i>
+                    Message on WhatsApp
+                </a>
+            </div>
+            
+            <div class="contact-form">
+                <h3 class="contact-title">Send a Message</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" id="name" class="form-input" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" id="phone" class="form-input" placeholder="Enter your phone number" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="design-type" class="form-label">Design Type</label>
+                        <select id="design-type" class="form-input form-select" required>
+                            <option value="" disabled selected>Select design type</option>
+                            <option value="maggam">Maggam Design</option>
+                            <option value="computer">Computer Design</option>
+                            <option value="custom">Custom Request</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea id="message" class="form-input form-textarea" placeholder="Describe your design requirements" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section><!-- Footer --><footer class="footer"> 
+    <div class="container">
+         <div class="footer-grid"> <div> 
+            <div class="footer-logo"> <span>PV</span> 
+                <span>Designs</span> </div> <p class="footer-about">Bringing traditional craftsmanship and modern design together for over a decade.</p> <div class="social-links"> <a href="#" class="social-link"><i class="ri-instagram-line"></i></a> <a href="#" class="social-link"><i class="ri-facebook-fill"></i></a> 
+                    <a href="#" class="social-link"><i class="ri-whatsapp-line"></i></a>
+                 </div>
+                 </div>
+                 <div>
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Home</a></li>
+                        <li><a href="#about" class="footer-link">About</a></li>
+                        <li><a href="#maggam" class="footer-link">Maggam Designs</a></li>
+                        <li><a href="#computer" class="footer-link">Computer Designs</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">Design Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Budget Designs</a></li>
+                        <li><a href="#" class="footer-link">Premium Collection</a></li>
+                        <li><a href="#" class="footer-link">Luxury Designs</a></li>
+                        <li><a href="#" class="footer-link">Bridal Collection</a></li>
+                        <li><a href="#" class="footer-link">Custom Designs</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-links">
+                        <li class="contact-item">
+                            <i class="ri-whatsapp-line contact-icon"></i>
+                            <span>+91 8309595989</span>
+                        </li>
+                        <li class="contact-item">
+                            <i class="ri-time-line contact-icon"></i>
+                            <div>
+                                <p>Mon - Sat: 10:00 AM - 7:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 PV Designs. All rights reserved.</p>
+                <a href="#" id="admin-link" class="admin-link">Admin Login</a>
+            </div>
+        </div>
+    </footer><!-- WhatsApp Button --><a href="https://wa.me/918309595989?text=Hello%20G.%20Padma,%20I'm%20interested%20in%20your%20designs%20and%20would%20like%20to%20know%20more." class="whatsapp-btn">
+         <i class="ri-whatsapp-line"></i>
+         </a><!-- Admin Login Modal -->
+         <div id="admin-login-modal" class="modal">
+             <div class="modal-content">
+                 <div class="modal-header"> <h3 class="modal-title">Admin Login</h3>
+                     <button class="modal-close">&times;</button> </div> <div class="modal-body">
+                         <form id="admin-login-form"> <div class="form-group"> 
+                            <label for="username" class="form-label">Username</label>
+                             <input type="text" id="username" class="form-input" placeholder="Enter your username" required> 
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" id="password" class="form-input" placeholder="Enter your password" required>
+                            </div>
+                            
+                            <div class="form-group" style="display: flex; align-items: center;">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" id="remember-me">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <span style="margin-left: 10px;">Remember me</span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                            
+                            <div style="text-align: center; margin-top: 15px;">
+                                <a href="#" style="color: var(--primary-color); font-size: 0.9rem;">Forgot password?</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div><!-- Admin Panel -->
+            <div id="admin-panel" class="admin-panel"> 
+                <div class="admin-sidebar"> <div class="admin-logo"> <span>PV</span> <span>Admin</span> 
+                </div>
+                <nav class="admin-nav">
+                    <a href="#" class="admin-nav-item active" id="dashboard-tab">
+                        <i class="ri-dashboard-line admin-nav-icon"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="#" class="admin-nav-item" id="designs-tab">
+                        <i class="ri-image-line admin-nav-icon"></i>
+                        <span>Manage Designs</span>
+                    </a>
+                    <a href="#" class="admin-nav-item" id="upload-tab">
+                        <i class="ri-upload-2-line admin-nav-icon"></i>
+                        <span>Upload New Design</span>
+                    </a>
+                    <a href="#" class="admin-nav-item" id="settings-tab">
+                        <i class="ri-settings-line admin-nav-icon"></i>
+                        <span>Settings</span>
+                    </a>
+                    <a href="#" class="admin-nav-item" id="logout-btn">
+                        <i class="ri-logout-box-line admin-nav-icon"></i>
+                        <span>Logout</span>
+                    </a>
+                </nav>
+            </div>
+            
+            <div class="admin-main">
+                <!-- Dashboard Tab -->
+                <div id="dashboard-content">
+                    <div class="admin-header">
+                        <h2 class="admin-title">Dashboard</h2>
+                        <div class="admin-user">
+                            <div class="admin-notification">
+                                <i class="ri-notification-3-line"></i>
+                                <span class="admin-notification-badge">3</span>
+                            </div>
+                            <div class="admin-avatar">
+                                <i class="ri-user-line"></i>
+                            </div>
+                            <span>G. Padma</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Stats Overview -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon primary">
+                                <i class="ri-image-line"></i>
+                            </div>
+                            <div>
+                                <div class="stat-value" id="total-designs-count">0</div>
+                                <div class="stat-label">Total Designs</div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon green">
+                                <i class="ri-scissors-line"></i>
+                            </div>
+                            <div>
+                                <div class="stat-value" id="maggam-designs-count">0</div>
+                                <div class="stat-label">Maggam Designs</div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon blue">
+                                <i class="ri-computer-line"></i>
+                            </div>
+                            <div>
+                                <div class="stat-value" id="computer-designs-count">0</div>
+                                <div class="stat-label">Computer Designs</div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon yellow">
+                                <i class="ri-eye-line"></i>
+                            </div>
+                            <div>
+                                <div class="stat-value">3,487</div>
+                                <div class="stat-label">Total Views</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Recent Designs -->
+                    <div class="admin-card">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                            <h3 style="font-size: 1.3rem; font-weight: 600;">Recent Designs</h3>
+                            <a href="#" style="color: var(--primary-color); font-size: 0.9rem;">View All</a>
+                        </div>
+                        
+                        <div class="table-responsive">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>Design</th>
+                                        <th>Category</th>
+                                        <th>Price</th>
+                                        <th>Date Added</th>
+                                        <th>Status</th>
+                                        <th style="text-align: right;">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="recent-designs-table">
+                                    <!-- Designs will be loaded here dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="pagination">
+                            <div class="pagination-info" id="showing-designs-text">Showing 0 of 0 designs</div>
+                            <div class="pagination-controls">
+                                <button class="page-btn"><i class="ri-arrow-left-s-line"></i></button>
+                                <button class="page-btn active">1</button>
+                                <button class="page-btn">2</button>
+                                <button class="page-btn">3</button>
+                                <button class="page-btn"><i class="ri-arrow-right-s-line"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Upload New Design Tab -->
+                <div id="upload-content" style="display: none;">
+                    <div class="admin-header">
+                        <h2 class="admin-title">Upload New Design</h2>
+                    </div>
+                    
+                    <div class="admin-card">
+                        <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 20px;">Upload New Design</h3>
+                        
+                        <form id="design-upload-form">
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                                <div class="form-group">
+                                    <label for="design-title" class="form-label">Design Title</label>
+                                    <input type="text" id="design-title" class="form-input" placeholder="Enter design title" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="design-price" class="form-label">Price (₹)</label>
+                                    <input type="number" id="design-price" class="form-input" placeholder="Enter price" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="design-category" class="form-label">Category</label>
+                                    <select id="design-category" class="form-input form-select" required>
+                                        <option value="" disabled selected>Select category</option>
+                                        <option value="maggam">Maggam Design</option>
+                                        <option value="computer">Computer Design</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="design-subcategory" class="form-label">Price Range</label>
+                                    <select id="design-subcategory" class="form-input form-select" required>
+                                        <option value="" disabled selected>Select price range</option>
+                                        <option value="budget">Budget</option>
+                                        <option value="premium">Premium</option>
+                                        <option value="luxury">Luxury</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="design-description" class="form-label">Description</label>
+                                <textarea id="design-description" class="form-input form-textarea" placeholder="Enter design description" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Upload Image</label>
+                                <div class="upload-container">
+                                    <div id="upload-placeholder">
+                                        <div class="upload-icon">
+                                            <i class="ri-upload-2-line"></i>
+                                        </div>
+                                        <p class="upload-text">Drag and drop your image here, or click to browse</p>
+                                        <p class="upload-info">Supports: JPG, PNG, WEBP (Max 5MB)</p>
+                                        <input type="file" id="design-image" class="file-input" accept="image/jpeg,image/png,image/webp" required>
+                                        <label for="design-image" class="file-label">Select File</label>
+                                    </div>
+                                    <div id="image-preview" class="image-preview">
+                                        <img id="preview-image" class="preview-image" src="" alt="Preview">
+                                        <div id="file-info" class="file-info"></div>
+                                        <button id="remove-image" type="button" class="remove-image">
+                                            <i class="ri-delete-bin-line"></i>Remove File
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group" style="display: flex; align-items: center;">
+                                <label class="custom-switch">
+                                    <input type="checkbox" id="publish-immediately" checked>
+                                    <span class="switch-slider"></span>
+                                </label>
+                                <span style="margin-left: 10px;">Publish immediately</span>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-outline">Preview</button>
+                                <button type="submit" class="btn btn-primary">Upload Design</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Manage Designs Tab -->
+                <div id="designs-content" style="display: none;">
+                    <div class="admin-header">
+                        <h2 class="admin-title">Manage Designs</h2>
+                    </div>
+                    
+                    <div class="admin-card">
+                        <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 20px;">All Designs</h3>
+                        
+                        <div style="display: flex; gap: 15px; margin-bottom: 20px;">
+                            <div class="form-group" style="flex: 1;">
+                                <select id="design-filter-category" class="form-input form-select">
+                                    <option value="all">All Categories</option>
+                                    <option value="maggam">Maggam Designs</option>
+                                    <option value="computer">Computer Designs</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group" style="flex: 1;">
+                                <select id="design-filter-price-range" class="form-input form-select">
+                                    <option value="all">All Price Ranges</option>
+                                    <option value="budget">Budget</option>
+                                    <option value="premium">Premium</option>
+                                    <option value="luxury">Luxury</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="table-responsive">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>Design</th>
+                                        <th>Category</th>
+                                        <th>Price</th>
+                                        <th>Date Added</th>
+                                        <th>Status</th>
+                                        <th style="text-align: right;">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="all-designs-table">
+                                    <!-- Designs will be loaded here dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="pagination">
+                            <div class="pagination-info" id="showing-all-designs-text">Showing 0 of 0 designs</div>
+                            <div class="pagination-controls">
+                                <button class="page-btn"><i class="ri-arrow-left-s-line"></i></button>
+                                <button class="page-btn active">1</button>
+                                <button class="page-btn">2</button>
+                                <button class="page-btn">3</button>
+                                <button class="page-btn"><i class="ri-arrow-right-s-line"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Settings Tab -->
+                <div id="settings-content" style="display: none;">
+                    <div class="admin-header">
+                        <h2 class="admin-title">Settings</h2>
+                    </div>
+                    
+                    <div class="admin-card" style="margin-bottom: 20px;">
+                        <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 20px;">Profile Settings</h3>
+                        
+                        <form>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                                <div class="form-group">
+                                    <label for="profile-name" class="form-label">Name</label>
+                                    <input type="text" id="profile-name" class="form-input" value="G. Padma">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="profile-email" class="form-label">Email</label>
+                                    <input type="email" id="profile-email" class="form-input" value="g.padma@example.com">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="profile-phone" class="form-label">Phone</label>
+                                    <input type="tel" id="profile-phone" class="form-input" value="+91 8309595989">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="profile-whatsapp" class="form-label">WhatsApp</label>
+                                    <input type="tel" id="profile-whatsapp" class="form-input" value="+91 8309595989">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="profile-bio" class="form-label">Bio</label>
+                                <textarea id="profile-bio" class="form-input form-textarea">With over a decade of experience in the art of design, I specialize in both traditional Maggam embroidery work and modern computer-aided designs.</textarea>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Save Changes</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="admin-card">
+                        <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 20px;">Change Password</h3>
+                        
+                        <form>
+                            <div class="form-group">
+                                <label for="current-password" class="form-label">Current Password</label>
+                                <input type="password" id="current-password" class="form-input" placeholder="Enter current password">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="new-password" class="form-label">New Password</label>
+                                <input type="password" id="new-password" class="form-input" placeholder="Enter new password">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="confirm-password" class="form-label">Confirm New Password</label>
+                                <input type="password" id="confirm-password" class="form-input" placeholder="Confirm new password">
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Change Password</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Edit Design Modal -->
+        <div id="edit-design-modal" class="modal">
+             <div class="modal-content" style="max-width: 800px;"> 
+                <div class="modal-header"> <h3 class="modal-title">Edit Design</h3>
+                     <button class="modal-close">&times;</button> </div>
+                      <div class="modal-body"> <form id="edit-design-form"> 
+                        <input type="hidden" id="edit-design-id">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                            <div class="form-group">
+                                <label for="edit-design-title" class="form-label">Design Title</label>
+                                <input type="text" id="edit-design-title" class="form-input" placeholder="Enter design title" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edit-design-price" class="form-label">Price (₹)</label>
+                                <input type="number" id="edit-design-price" class="form-input" placeholder="Enter price" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edit-design-category" class="form-label">Category</label>
+                                <select id="edit-design-category" class="form-input form-select" required>
+                                    <option value="" disabled selected>Select category</option>
+                                    <option value="maggam">Maggam Design</option>
+                                    <option value="computer">Computer Design</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="edit-design-subcategory" class="form-label">Price Range</label>
+                                <select id="edit-design-subcategory" class="form-input form-select" required>
+                                    <option value="" disabled selected>Select price range</option>
+                                    <option value="budget">Budget</option>
+                                    <option value="premium">Premium</option>
+                                    <option value="luxury">Luxury</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="edit-design-description" class="form-label">Description</label>
+                            <textarea id="edit-design-description" class="form-input form-textarea" placeholder="Enter design description" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Current Image</label>
+                            <div id="edit-current-image-container" style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                                </div>
+                                <img id="edit-current-image" src="" alt="Current Design" style="max-height: 150px; border-radius: var(--border-radius-md);">
+                                <button type="button" id="change-image-btn" class="btn btn-outline" style="padding: 8px 15px;">Change Image</button>
+                            </div>
+                            
+                            <div id="edit-new-image-container" style="display: none;">
+                                <label class="form-label">New Image</label>
+                                <div class="upload-container">
+                                    <div id="edit-upload-placeholder">
+                                        <div class="upload-icon">
+                                            <i class="ri-upload-2-line"></i>
+                                        </div>
+                                        <p class="upload-text">Drag and drop your image here, or click to browse</p>
+                                        <p class="upload-info">Supports: JPG, PNG, WEBP (Max 5MB)</p>
+                                        <input type="file" id="edit-design-image" class="file-input" accept="image/jpeg,image/png,image/webp">
+                                        <label for="edit-design-image" class="file-label">Select File</label>
+                                    </div>
+                                    <div id="edit-image-preview" class="image-preview">
+                                        <img id="edit-preview-image" class="preview-image" src="" alt="Preview">
+                                        <div id="edit-file-info" class="file-info"></div>
+                                        <button id="edit-remove-image" type="button" class="remove-image">
+                                            <i class="ri-delete-bin-line"></i>Remove File
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group" style="display: flex; align-items: center;">
+                            <label class="custom-switch">
+                                <input type="checkbox" id="edit-publish-immediately" checked>
+                                <span class="switch-slider"></span>
+                            </label>
+                            <span style="margin-left: 10px;">Publish immediately</span>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" id="cancel-edit" class="btn btn-outline">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            // Delete Confirmation Modal
+<div id="delete-confirmation-modal" class="modal">
+    <div class="modal-content" style="max-width: 400px; text-align: center;">
+        <div class="modal-body">
+            <div style="width: 80px; height: 80px; background-color: rgba(255, 82, 82, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                <i class="ri-delete-bin-line" style="font-size: 2rem; color: #FF5252;"></i>
+            </div>
+            <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 10px;">Delete Design</h3>
+            <p style="color: var(--light-text); margin-bottom: 25px;">Are you sure you want to delete this design? This action cannot be undone.</p>
+            <div style="display: flex; justify-content: center; gap: 15px;">
+                <button id="cancel-delete" class="btn btn-outline">Cancel</button>
+                <button id="confirm-delete" class="btn btn-primary" style="background-color: #FF5252; border-color: #FF5252;">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Notification -->
+<div id="notification" class="notification">
+    <i class="notification-icon"></i>
+    <span class="notification-message"></span>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize designs data from localStorage or use default data
+    let designsData = JSON.parse(localStorage.getItem('designsData')) || {
+        maggam: [
+            {
+                id: '1',
+                title: 'Floral Elegance',
+                price: '₹2,800',
+                category: 'maggam',
+                priceRange: 'premium',
+                description: 'Intricate floral pattern with gold thread work, perfect for wedding blouses.',
+                image: 'https://readdy.ai/api/search-image?query=close-up%2520of%2520elegant%2520gold%2520thread%2520Maggam%2520embroidery%2520on%2520red%2520fabric%252C%2520showing%2520intricate%2520floral%2520pattern%2520with%2520detailed%2520stitching%252C%2520professional%2520photography%2520with%2520studio%2520lighting%2520highlighting%2520the%2520texture%2520and%2520craftsmanship%2520of%2520traditional%2520Indian%2520embroidery&width=500&height=600&seq=5&orientation=portrait',
+                date: 'May 8, 2025'
+            },
+            {
+                id: '2',
+                title: 'Peacock Splendor',
+                price: '₹6,500',
+                category: 'maggam',
+                priceRange: 'luxury',
+                description: 'Luxurious peacock motif with intricate beadwork and vibrant thread details.',
+                image: 'https://readdy.ai/api/search-image?query=close-up%2520of%2520luxurious%2520peacock%2520design%2520Maggam%2520embroidery%2520on%2520blue%2520silk%2520fabric%252C%2520showing%2520intricate%2520beadwork%2520and%2520colorful%2520thread%2520details%252C%2520professional%2520photography%2520with%2520studio%2520lighting%2520highlighting%2520the%2520vibrant%2520colors%2520and%2520texture%2520of%2520traditional%2520Indian%2520embroidery&width=500&height=600&seq=6&orientation=portrait',
+                date: 'May 5, 2025'
+            },
+            {
+                id: '3',
+                title: 'Simple Border',
+                price: '₹1,800',
+                category: 'maggam',
+                priceRange: 'budget',
+                description: 'Elegant border design with simple gold thread work, perfect for everyday wear.',
+                image: 'https://readdy.ai/api/search-image?query=close-up%2520of%2520simple%2520yet%2520elegant%2520Maggam%2520embroidery%2520on%2520green%2520fabric%252C%2520showing%2520small%2520floral%2520border%2520pattern%2520with%2520gold%2520thread%2520work%252C%2520professional%2520photography%2520with%2520studio%2520lighting%2520highlighting%2520the%2520clean%2520design%2520and%2520precise%2520stitching%2520of%2520traditional%2520Indian%2520embroidery&width=500&height=600&seq=7&orientation=portrait',
+                date: 'May 4, 2025'
+            }
+        ],
+        computer: [
+            {
+                id: '4',
+                title: 'Digital Florals',
+                price: '₹1,800',
+                category: 'computer',
+                priceRange: 'budget',
+                description: 'Precise floral pattern created digitally, perfect for consistent production.',
+                image: 'https://readdy.ai/api/search-image?query=close-up%2520of%2520digital%2520embroidery%2520design%2520showing%2520precise%2520floral%2520pattern%2520on%2520fabric%252C%2520computer-generated%2520with%2520consistent%2520stitching%2520and%2520clean%2520lines%252C%2520professional%2520photography%2520with%2520studio%2520lighting%2520highlighting%2520the%2520modern%2520precision%2520of%2520machine%2520embroidery%2520on%2520light%2520colored%2520fabric&width=500&height=600&seq=11&orientation=portrait',
+                date: 'May 7, 2025'
+            },
+            {
+                id: '5',
+                title: 'Geometric Precision',
+                price: '₹2,800',
+                category: 'computer',
+                priceRange: 'premium',
+                description: 'Modern geometric pattern with clean lines and perfect symmetry.',
+                image: 'https://readdy.ai/api/search-image?query=close-up%2520of%2520geometric%2520computer%2520embroidery%2520design%2520on%2520dark%2520fabric%252C%2520showing%2520precise%2520patterns%2520with%2520consistent%2520stitching%2520and%2520modern%2520aesthetic%252C%2520professional%2520photography%2520with%2520studio%2520lighting%2520highlighting%2520the%2520clean%2520lines%2520and%2520symmetry%2520of%2520digital%2520pattern%2520creation&width=500&height=600&seq=12&orientation=portrait',
+                date: 'May 6, 2025'
+            },
+            {
+                id: '6',
+                title: 'Custom Monograms',
+                price: '₹1,200',
+                category: 'computer',
+                priceRange: 'budget',
+                description: 'Personalized monogram designs, perfect for gifts and personal items.',
+                image: 'https://readdy.ai/api/search-image?query=close-up%2520of%2520monogram%2520computer%2520embroidery%2520design%2520on%2520fabric%252C%2520showing%2520elegant%2520personalized%2520initials%2520with%2520decorative%2520elements%252C%2520professional%2520photography%2520with%2520studio%2520lighting%2520highlighting%2520the%2520precision%2520and%2520detail%2520of%2520digital%2520monogram%2520creation%2520on%2520light%2520colored%2520fabric&width=500&height=600&seq=13&orientation=portrait',
+                date: 'May 3, 2025'
+            }
+        ]
+    };
+
+    // Save designs data to localStorage
+    function saveDesignsData() {
+        localStorage.setItem('designsData', JSON.stringify(designsData));
+    }
+
+    // Format date
+    function formatDate() {
+        const date = new Date();
+        const options = { year: 'numeric', month: 'short', day: 'numeric' };
+        return date.toLocaleDateString('en-US', options);
+    }
+
+    // Show notification
+    function showNotification(message, type = 'success') {
+        const notification = document.getElementById('notification');
+        const icon = notification.querySelector('.notification-icon');
+        const msg = notification.querySelector('.notification-message');
+        
+        notification.className = `notification ${type}`;
+        icon.className = `notification-icon ${type === 'success' ? 'ri-check-line' : 'ri-error-warning-line'}`;
+        msg.textContent = message;
+        
+        notification.classList.add('show');
+        
+        setTimeout(() => {
+            notification.classList.remove('show');
+        }, 3000);
+    }
+
+    // Render designs in the public view
+    function renderPublicDesigns() {
+        const maggamContainer = document.getElementById('maggam-designs-container');
+        const computerContainer = document.getElementById('computer-designs-container');
+        
+        maggamContainer.innerHTML = '';
+        computerContainer.innerHTML = '';
+        
+        // Render Maggam designs
+        designsData.maggam.forEach(design => {
+            maggamContainer.innerHTML += `
+                <div class="design-card" data-id="${design.id}">
+                    <div class="design-image">
+                        <img src="${design.image}" alt="${design.title}">
+                    </div>
+                    <div class="design-content">
+                        <div class="design-header">
+                            <h3 class="design-title">${design.title}</h3>
+                            <span class="design-price">${design.price}</span>
+                        </div>
+                        <p class="design-description">${design.description}</p>
+                        <a href="https://wa.me/918309595989?text=I'm%20interested%20in%20the%20${encodeURIComponent(design.title)}%20design%20priced%20at%20${encodeURIComponent(design.price)}" class="whatsapp-link">
+                            <i class="ri-whatsapp-line whatsapp-icon"></i>
+                            Contact on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            `;
+        });
+        
+        // Render Computer designs
+        designsData.computer.forEach(design => {
+            computerContainer.innerHTML += `
+                <div class="design-card" data-id="${design.id}">
+                    <div class="design-image">
+                        <img src="${design.image}" alt="${design.title}">
+                    </div>
+                    <div class="design-content">
+                        <div class="design-header">
+                            <h3 class="design-title">${design.title}</h3>
+                            <span class="design-price">${design.price}</span>
+                        </div>
+                        <p class="design-description">${design.description}</p>
+                        <a href="https://wa.me/918309595989?text=I'm%20interested%20in%20the%20${encodeURIComponent(design.title)}%20design%20priced%20at%20${encodeURIComponent(design.price)}" class="whatsapp-link">
+                            <i class="ri-whatsapp-line whatsapp-icon"></i>
+                            Contact on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            `;
+        });
+    }
+
+    // Render designs in admin dashboard
+    function renderAdminDesigns() {
+        const recentDesignsTable = document.getElementById('recent-designs-table');
+        const allDesignsTable = document.getElementById('all-designs-table');
+        
+        recentDesignsTable.innerHTML = '';
+        allDesignsTable.innerHTML = '';
+        
+        // Combine all designs and sort by date (newest first)
+        const allDesigns = [...designsData.maggam, ...designsData.computer].sort((a, b) => {
+            return new Date(b.date) - new Date(a.date);
+        });
+        
+        // Render recent designs (first 4)
+        allDesigns.slice(0, 4).forEach(design => {
+            recentDesignsTable.innerHTML += `
+                <tr data-id="${design.id}">
+                    <td>
+                        <div style="display: flex; align-items: center;">
+                            <div style="width: 40px; height: 40px; border-radius: 4px; overflow: hidden; margin-right: 10px;">
+                                <img src="${design.image}" alt="${design.title}" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div>
+                                <div style="font-weight: 500;">${design.title}</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div>${design.category === 'maggam' ? 'Maggam Design' : 'Computer Design'}</div>
+                        <div style="font-size: 0.8rem; color: var(--light-text);">${design.priceRange}</div>
+                    </td>
+                    <td>${design.price}</td>
+                    <td>${design.date}</td>
+                    <td><span class="status-badge published">Published</span></td>
+                    <td style="text-align: right;">
+                        <div class="action-buttons">
+                            <button class="action-btn edit edit-design-btn" data-id="${design.id}">
+                                <i class="ri-edit-line"></i>
+                            </button>
+                            <button class="action-btn delete delete-design-btn" data-id="${design.id}">
+                                <i class="ri-delete-bin-line"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            `;
+        });
+        
+        // Render all designs
+        allDesigns.forEach(design => {
+            allDesignsTable.innerHTML += `
+                <tr data-id="${design.id}">
+                    <td>
+                        <div style="display: flex; align-items: center;">
+                            <div style="width: 40px; height: 40px; border-radius: 4px; overflow: hidden; margin-right: 10px;">
+                                <img src="${design.image}" alt="${design.title}" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div>
+                                <div style="font-weight: 500;">${design.title}</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div>${design.category === 'maggam' ? 'Maggam Design' : 'Computer Design'}</div>
+                        <div style="font-size: 0.8rem; color: var(--light-text);">${design.priceRange}</div>
+                    </td>
+                    <td>${design.price}</td>
+                    <td>${design.date}</td>
+                    <td><span class="status-badge published">Published</span></td>
+                    <td style="text-align: right;">
+                        <div class="action-buttons">
+                            <button class="action-btn edit edit-design-btn" data-id="${design.id}">
+                                <i class="ri-edit-line"></i>
+                            </button>
+                            <button class="action-btn delete delete-design-btn" data-id="${design.id}">
+                                <i class="ri-delete-bin-line"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            `;
+        });
+        
+        // Update counts
+        document.getElementById('total-designs-count').textContent = allDesigns.length;
+        document.getElementById('maggam-designs-count').textContent = designsData.maggam.length;
+        document.getElementById('computer-designs-count').textContent = designsData.computer.length;
+        document.getElementById('showing-designs-text').textContent = `Showing ${Math.min(4, allDesigns.length)} of ${allDesigns.length} designs`;
+        document.getElementById('showing-all-designs-text').textContent = `Showing ${allDesigns.length} of ${allDesigns.length} designs`;
+    }
+
+    // Initialize image upload functionality
+    function initImageUpload() {
+        const designImage = document.getElementById('design-image');
+        const uploadPlaceholder = document.getElementById('upload-placeholder');
+        const imagePreview = document.getElementById('image-preview');
+        const previewImage = document.getElementById('preview-image');
+        const fileInfo = document.getElementById('file-info');
+        const removeImage = document.getElementById('remove-image');
+        
+        if (designImage) {
+            designImage.addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                if (file) {
+                    if (file.size > 5 * 1024 * 1024) {
+                        showNotification('File size exceeds 5MB limit', 'error');
+                        designImage.value = '';
+                        return;
+                    }
+                    
+                    if (!['image/jpeg', 'image/png', 'image/webp'].includes(file.type)) {
+                        showNotification('Please select a valid image file (JPG, PNG, or WEBP)', 'error');
+                        designImage.value = '';
+                        return;
+                    }
+                    
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        previewImage.src = e.target.result;
+                        fileInfo.textContent = `${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
+                        uploadPlaceholder.style.display = 'none';
+                        imagePreview.style.display = 'flex';
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+            
+            if (removeImage) {
+                removeImage.addEventListener('click', function() {
+                    designImage.value = '';
+                    uploadPlaceholder.style.display = 'block';
+                    imagePreview.style.display = 'none';
+                    previewImage.src = '';
+                    fileInfo.textContent = '';
+                });
+            }
+        }
+        
+        // Initialize edit image upload
+        const editDesignImage = document.getElementById('edit-design-image');
+        const editUploadPlaceholder = document.getElementById('edit-upload-placeholder');
+        const editImagePreview = document.getElementById('edit-image-preview');
+        const editPreviewImage = document.getElementById('edit-preview-image');
+        const editFileInfo = document.getElementById('edit-file-info');
+        const editRemoveImage = document.getElementById('edit-remove-image');
+        
+        if (editDesignImage) {
+            editDesignImage.addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                if (file) {
+                    if (file.size > 5 * 1024 * 1024) {
+                        showNotification('File size exceeds 5MB limit', 'error');
+                        editDesignImage.value = '';
+                        return;
+                    }
+                    
+                    if (!['image/jpeg', 'image/png', 'image/webp'].includes(file.type)) {
+                        showNotification('Please select a valid image file (JPG, PNG, or WEBP)', 'error');
+                        editDesignImage.value = '';
+                        return;
+                    }
+                    
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        editPreviewImage.src = e.target.result;
+                        editFileInfo.textContent = `${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
+                        editUploadPlaceholder.style.display = 'none';
+                        editImagePreview.style.display = 'flex';
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+            
+            if (editRemoveImage) {
+                editRemoveImage.addEventListener('click', function() {
+                    editDesignImage.value = '';
+                    editUploadPlaceholder.style.display = 'block';
+                    editImagePreview.style.display = 'none';
+                    editPreviewImage.src = '';
+                    editFileInfo.textContent = '';
+                });
+            }
+        }
+    }
+
+    // Initialize admin panel tabs
+    function initAdminTabs() {
+        const tabs = {
+            'dashboard-tab': 'dashboard-content',
+            'designs-tab': 'designs-content',
+            'upload-tab': 'upload-content',
+            'settings-tab': 'settings-content'
+        };
+        
+        Object.entries(tabs).forEach(([tabId, contentId]) => {
+            const tab = document.getElementById(tabId);
+            const content = document.getElementById(contentId);
+            
+            if (tab && content) {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Hide all content
+                    Object.values(tabs).forEach(id => {
+                        const el = document.getElementById(id);
+                        if (el) el.style.display = 'none';
+                    });
+                    
+                    // Remove active class from all tabs
+                    Object.keys(tabs).forEach(id => {
+                        const el = document.getElementById(id);
+                        if (el) el.classList.remove('active');
+                    });
+                    
+                    // Show selected content and mark tab as active
+                    content.style.display = 'block';
+                    tab.classList.add('active');
+                });
+            }
+        });
+    }
+
+    // Initialize admin login functionality
+    function initAdminLogin() {
+        const adminLink = document.getElementById('admin-link');
+        const adminLoginModal = document.getElementById('admin-login-modal');
+        const closeLoginModal = adminLoginModal.querySelector('.modal-close');
+        const adminLoginForm = document.getElementById('admin-login-form');
+        const adminPanel = document.getElementById('admin-panel');
+        const logoutBtn = document.getElementById('logout-btn');
+        
+        if (adminLink) {
+            adminLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                adminLoginModal.classList.add('active');
+            });
+        }
+        
+        if (closeLoginModal) {
+            closeLoginModal.addEventListener('click', function() {
+                adminLoginModal.classList.remove('active');
+            });
+        }
+        
+        if (adminLoginForm) {
+            adminLoginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+                
+                // Simple validation (in a real app, this would be server-side)
+                if (username === 'admin' && password === 'password') {
+                    adminLoginModal.classList.remove('active');
+                    document.body.style.overflow = 'hidden';
+                    adminPanel.style.display = 'block';
+                    showNotification('Logged in successfully');
+                } else {
+                    showNotification('Invalid credentials. Please try again.', 'error');
+                }
+            });
+        }
+        
+        if (logoutBtn) {
+            logoutBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                adminPanel.style.display = 'none';
+                document.body.style.overflow = '';
+                showNotification('Logged out successfully');
+            });
+        }
+    }
+
+    // Initialize design upload form
+    function initDesignUpload() {
+        const designUploadForm = document.getElementById('design-upload-form');
+        
+        if (designUploadForm) {
+            designUploadForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const title = document.getElementById('design-title').value;
+                const price = document.getElementById('design-price').value;
+                const category = document.getElementById('design-category').value;
+                const priceRange = document.getElementById('design-subcategory').value;
+                const description = document.getElementById('design-description').value;
+                const imageInput = document.getElementById('design-image');
+                const publishImmediately = document.getElementById('publish-immediately').checked;
+                
+                if (!imageInput.files[0]) {
+                    showNotification('Please select an image', 'error');
+                    return;
+                }
+                
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const newDesign = {
+                        id: Date.now().toString(),
+                        title,
+                        price: `₹${price}`,
+                        category,
+                        priceRange,
+                        description,
+                        image: e.target.result,
+                        date: formatDate()
+                    };
+                    
+                    // Add to the appropriate category
+                    designsData[category].unshift(newDesign);
+                    saveDesignsData();
+                    
+                    // Reset form
+                    designUploadForm.reset();
+                    document.getElementById('remove-image').click();
+                    
+                    // Update UI
+                    renderPublicDesigns();
+                    renderAdminDesigns();
+                    
+                    showNotification('Design uploaded successfully');
+                    
+                    // Switch to designs tab
+                    document.getElementById('designs-tab').click();
+                };
+                reader.readAsDataURL(imageInput.files[0]);
+            });
+        }
+    }
+
+    // Initialize design edit functionality
+    function initDesignEdit() {
+        let designToEdit = null;
+        
+        // Edit button click handler
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.edit-design-btn')) {
+                const designId = e.target.closest('.edit-design-btn').dataset.id;
+                
+                // Find the design in our data
+                let design;
+                for (const category of ['maggam', 'computer']) {
+                    design = designsData[category].find(d => d.id === designId);
+                    if (design) {
+                        designToEdit = { ...design, category };
+                        break;
+                    }
+                }
+                
+                if (designToEdit) {
+                    // Populate the edit form
+                    document.getElementById('edit-design-id').value = designToEdit.id;
+                    document.getElementById('edit-design-title').value = designToEdit.title;
+                    document.getElementById('edit-design-price').value = designToEdit.price.replace('₹', '').replace(',', '');
+                    document.getElementById('edit-design-category').value = designToEdit.category;
+                    document.getElementById('edit-design-subcategory').value = designToEdit.priceRange;
+                    document.getElementById('edit-design-description').value = designToEdit.description;
+                    document.getElementById('edit-current-image').src = designToEdit.image;
+                    document.getElementById('edit-publish-immediately').checked = true;
+                    
+                    // Reset the new image upload section
+                    document.getElementById('edit-upload-placeholder').style.display = 'block';
+                    document.getElementById('edit-image-preview').style.display = 'none';
+                    document.getElementById('edit-design-image').value = '';
+                    document.getElementById('edit-current-image-container').style.display = 'flex';
+                    document.getElementById('edit-new-image-container').style.display = 'none';
+                    
+                    // Show the modal
+                    document.getElementById('edit-design-modal').classList.add('active');
+                }
+            }
+        });
+        
+        // Change image button
+        document.getElementById('change-image-btn').addEventListener('click', function() {
+            document.getElementById('edit-current-image-container').style.display = 'none';
+            document.getElementById('edit-new-image-container').style.display = 'block';
+        });
+        
+        // Edit form submission
+        document.getElementById('edit-design-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const id = document.getElementById('edit-design-id').value;
+            const title = document.getElementById('edit-design-title').value;
+            const price = document.getElementById('edit-design-price').value;
+            const category = document.getElementById('edit-design-category').value;
+            const priceRange = document.getElementById('edit-design-subcategory').value;
+            const description = document.getElementById('edit-design-description').value;
+            const imageInput = document.getElementById('edit-design-image');
+            const publishImmediately = document.getElementById('edit-publish-immediately').checked;
+            
+            // Find the design in our data
+            let design;
+            let oldCategory = designToEdit.category;
+            for (const cat of ['maggam', 'computer']) {
+                design = designsData[cat].find(d => d.id === id);
+                if (design) {
+                    break;
+                }
+            }
+            
+            if (design) {
+                // Update design properties
+                design.title = title;
+                design.price = `₹${price}`;
+                design.priceRange = priceRange;
+                design.description = description;
+                design.date = formatDate();
+                
+                // If category changed, move to new category
+                if (oldCategory !== category) {
+                    designsData[oldCategory] = designsData[oldCategory].filter(d => d.id !== id);
+                    designsData[category].unshift(design);
+                }
+                
+                // If new image was uploaded, update it
+                if (imageInput.files[0]) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        design.image = e.target.result;
+                        finalizeEdit();
+                    };
+                    reader.readAsDataURL(imageInput.files[0]);
+                } else {
+                    finalizeEdit();
+                }
+                
+                function finalizeEdit() {
+                    saveDesignsData();
+                    renderPublicDesigns();
+                    renderAdminDesigns();
+                    document.getElementById('edit-design-modal').classList.remove('active');
+                    showNotification('Design updated successfully');
+                }
+            }
+        });
+        
+        // Cancel edit
+        document.getElementById('cancel-edit').addEventListener('click', function() {
+            document.getElementById('edit-design-modal').classList.remove('active');
+        });
+        
+        // Close edit modal
+        document.getElementById('edit-design-modal').querySelector('.modal-close').addEventListener('click', function() {
+            document.getElementById('edit-design-modal').classList.remove('active');
+        });
+    }
+
+    // Initialize design delete functionality
+    function initDesignDelete() {
+        let designToDelete = null;
+        
+        // Delete button click handler
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.delete-design-btn')) {
+                const designId = e.target.closest('.delete-design-btn').dataset.id;
+                
+                // Find the design in our data
+                for (const category of ['maggam', 'computer']) {
+                    designToDelete = designsData[category].find(d => d.id === designId);
+                    if (designToDelete) {
+                        designToDelete.category = category;
+                        break;
+                    }
+                }
+                
+                if (designToDelete) {
+                    document.getElementById('delete-confirmation-modal').classList.add('active');
+                }
+            }
+        });
+        
+        // Confirm delete
+        document.getElementById('confirm-delete').addEventListener('click', function() {
+            if (designToDelete) {
+                // Remove from data
+                designsData[designToDelete.category] = designsData[designToDelete.category].filter(
+                    d => d.id !== designToDelete.id
+                );
+                
+                saveDesignsData();
+                renderPublicDesigns();
+                renderAdminDesigns();
+                
+                document.getElementById('delete-confirmation-modal').classList.remove('active');
+                showNotification('Design deleted successfully');
+                
+                designToDelete = null;
+            }
+        });
+        
+        // Cancel delete
+        document.getElementById('cancel-delete').addEventListener('click', function() {
+            document.getElementById('delete-confirmation-modal').classList.remove('active');
+            designToDelete = null;
+        });
+        
+        // Close delete modal
+        document.getElementById('delete-confirmation-modal').querySelector('.modal-close').addEventListener('click', function() {
+            document.getElementById('delete-confirmation-modal').classList.remove('active');
+            designToDelete = null;
+        });
+    }
+    // Initialize filter functionality
+function initFilters() {
+    // Public view filters
+    const maggamFilterButtons = document.querySelectorAll('#maggam-designs .filter-btn');
+    const computerFilterButtons = document.querySelectorAll('#computer-designs .filter-btn');
+    
+    function applyFilter(containerId, category, filterValue) {
+        const container = document.getElementById(containerId);
+        const designs = container.querySelectorAll('.design-card');
+        
+        designs.forEach(design => {
+            const priceText = design.querySelector('.design-price').textContent;
+            const price = parseInt(priceText.replace(/[^0-9]/g, ''));
+            
+            if (filterValue === 'all') {
+                design.style.display = '';
+            } else {
+                // Define price ranges for each category
+                const ranges = {
+                    maggam: {
+                        budget: { min: 700, max: 1800 },
+                        premium: { min: 1900, max: 3000 },
+                        luxury: { min: 3001, max: Infinity }
+                    },
+                    computer: {
+                        budget: { min: 400, max: 1000 },
+                        premium: { min: 1000, max: 1800 },
+                        luxury: { min: 2000, max: Infinity }
+                    }
+                };
+                
+                const range = ranges[category][filterValue];
+                design.style.display = (price >= range.min && price <= range.max) ? '' : 'none';
+            }
+        });
+    }
+    
+    maggamFilterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filterValue = this.dataset.filter;
+            
+            // Update active button
+            maggamFilterButtons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+            this.classList.add('active');
+            
+            applyFilter('maggam-designs-container', 'maggam', filterValue);
+        });
+    });
+    
+    computerFilterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filterValue = this.dataset.filter;
+            
+            // Update active button
+            computerFilterButtons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+            this.classList.add('active');
+            
+            applyFilter('computer-designs-container', 'computer', filterValue);
+        });
+    });
+    
+    // Admin view filters
+    const categoryFilter = document.getElementById('design-filter-category');
+    const priceRangeFilter = document.getElementById('design-filter-price-range');
+    
+    function applyAdminFilters() {
+        const category = categoryFilter.value;
+        const priceRange = priceRangeFilter.value;
+        const rows = document.querySelectorAll('#all-designs-table tr');
+        
+        rows.forEach(row => {
+            const rowCategory = row.querySelector('td:nth-child(2) div:first-child').textContent.toLowerCase().includes('maggam') ? 'maggam' : 'computer';
+            const rowPriceRange = row.querySelector('td:nth-child(2) div:last-child').textContent.toLowerCase();
+            
+            const categoryMatch = category === 'all' || rowCategory === category;
+            const priceRangeMatch = priceRange === 'all' || rowPriceRange === priceRange;
+            
+            row.style.display = categoryMatch && priceRangeMatch ? '' : 'none';
+        });
+        
+        const visibleCount = document.querySelectorAll('#all-designs-table tr:not([style*="display: none"])').length;
+        const totalCount = rows.length;
+        document.getElementById('showing-all-designs-text').textContent = `Showing ${visibleCount} of ${totalCount} designs`;
+    }
+    
+    if (categoryFilter && priceRangeFilter) {
+        categoryFilter.addEventListener('change', applyAdminFilters);
+        priceRangeFilter.addEventListener('change', applyAdminFilters);
+    }
+}
+
+    // Initialize mobile menu
+    function initMobileMenu() {
+        const menuButton = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.nav');
+        
+        if (menuButton && mobileMenu) {
+            menuButton.addEventListener('click', function() {
+                mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+            });
+        }
+    }
+
+    // Initialize everything
+    function init() {
+        renderPublicDesigns();
+        renderAdminDesigns();
+        initImageUpload();
+        initAdminTabs();
+        initAdminLogin();
+        initDesignUpload();
+        initDesignEdit();
+        initDesignDelete();
+        initFilters();
+        initMobileMenu();
+    }
+
+    // Start the application
+    init();
+});
+</script>
+</body>
+</html>
+
